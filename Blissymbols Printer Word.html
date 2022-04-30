@@ -2,20 +2,20 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Blissymbols Printer</title>
     <style>
         body {
             background-color: lightcyan;
         }
         
-        t {
+        h1 {
             color: black;
             font-family: "Times New Roman", serif;
             font-style: normal;
             font-weight: normal;
             text-decoration: none;
             text-align: center;
-            margin: auto;
             font-size: 35pt;
         }
         
@@ -37,15 +37,109 @@
         .right {
             margin-right: 3.5in;
         }
+        
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        .navbar a {
+            float: left;
+            font-size: 15px;
+            color: white;
+            text-align: center;
+            padding: 15px 15px;
+            text-decoration: none;
+        }
+        
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        
+        .dropdown .dropbtn {
+            cursor: pointer;
+            font-size: 15px;
+            border: none;
+            color: white;
+            padding: 15px 15px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        
+        .navbar a:hover,
+        .dropdown:hover .dropbtn,
+        .dropbtn:focus {
+            background-color: rgb(0, 217, 255);
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        
+        .show {
+            display: block;
+        }
     </style>
 </head>
 
 <body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="test.html">News</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="dropToggle()">Artifacts <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="Blissymbols Printer Word.html">Blissymbols Printer</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                <a href="#">Link 4</a>
+                <a href="#">Link 5</a>
+                <a href="#">Link 6</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // When the user clicks on the button, toggle between hiding and showing the dropdown content
+        function dropToggle() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
     <center>
-        <t>Blissymbols Printer</t>
+        <h1>Blissymbols Printer</h1>
     </center>
-    <p><span class="left" style="float:left;padding-top: 25px; padding-right: 25px;"><img width="261" height="375" alt="See the source image " title="See the source image " src="Blissymbols%20Printer%20Word_files/Image_001.jpg"/></span></p>
-    <p class="right" style="padding-top: 25px;">Blissymbols is a writing system and language made up from several hundred basic symbols, first invented by Charles Bliss in 1949. Blissymbols was designed to be easy to learn with simple and intuitive symbols and language framework. It was originally
+    <p><span class="left" style="float:left;padding-right: 25px;"><img width="261" height="375" alt="See the source image " title="See the source image " src="Blissymbols%20Printer%20Word_files/Image_001.jpg"/></span></p>
+    <p class="right">Blissymbols is a writing system and language made up from several hundred basic symbols, first invented by Charles Bliss in 1949. Blissymbols was designed to be easy to learn with simple and intuitive symbols and language framework. It was originally
         created to help overcome language barriers but gained more popularity when used by therapists helping people with communication difficulties.</p>
     <p><br/></p>
     <p class="right">However, there was a problem with this language. This writing system required an interpreter to assist the user and translate to a more standard language. To improve this system, Rachel Zimmerman-Brachman invented the Blissymbols Printer for a science
