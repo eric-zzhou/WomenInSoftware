@@ -38,6 +38,20 @@
             margin-right: 3.5in;
         }
         
+        .image-thumb {
+            display: inline-block;
+            text-align: center;
+            /* vertical-align: top; */
+        }
+        
+        .property-title {
+            text-align: center;
+            font: italic 13px "Tahoma";
+            padding: inherit;
+            /* margin-top: 10px; */
+            /* margin-bottom: 35px; */
+        }
+        
         .navbar {
             overflow: hidden;
             background-color: black;
@@ -94,7 +108,7 @@
         }
         
         .dropdown-content a:hover {
-            background-color: #ddd;
+            background-color: rgb(100, 232, 255);
         }
         
         .show {
@@ -106,7 +120,7 @@
 <body>
     <div class="navbar">
         <a href="index.html">Home</a>
-        <a href="test.html">News</a>
+        <a href="test.html">Sources</a>
         <div class="dropdown">
             <button class="dropbtn" onclick="dropToggle()">Artifacts <i class="fa fa-caret-down"></i></button>
             <div class="dropdown-content" id="myDropdown">
@@ -139,7 +153,10 @@
     <center>
         <h1>Blissymbols Printer</h1>
     </center>
-    <p><span class="left" style="float:left;padding-right: 25px;"><img width="261" height="375" alt="See the source image " title="See the source image " src="Blissymbols%20Printer%20Word_files/Image_001.jpg"/></span></p>
+    <div class="image-thumb" style="float:left;padding-right: 25px;">
+        <img class="left" width="261" height="375" src="Blissymbols%20Printer%20Word_files/Image_001.jpg" />
+        <p class="property-title" style="margin-left: 3.5in;">Examples of Blissymbols</p>
+    </div>
     <p class="right">Blissymbols is a writing system and language made up from several hundred basic symbols, first invented by Charles Bliss in 1949. Blissymbols was designed to be easy to learn with simple and intuitive symbols and language framework. It was originally
         created to help overcome language barriers but gained more popularity when used by therapists helping people with communication difficulties.</p>
     <p><br/></p>
@@ -150,7 +167,11 @@
         communication, and making things like emailing possible. This project ended up being shown in the World Exhibition of Achievement of Young inventors in Bulgaria, where it won a silver medal. She also won an YTV Achievement award for Innovation.
         25 years after the invention, Rachel received another award from the Women&#39;s International Film and Television Showcase.</p>
     <p><br/></p>
-    <p class="right"><span style="float:right;padding-left: 25px;"><img width="237" height="280" alt="See the source image " title="See the source image " src="Blissymbols%20Printer%20Word_files/Image_002.jpg"/></span></p>
+    <div class="image-thumb" style="float:right;padding-left: 25px;">
+        <img class="right" width="237" height="280" src="Blissymbols%20Printer%20Word_files/Image_002.jpg" />
+        <p class="property-title" style="margin-right: 3.5in;">Rachel Zimmerman-Brachman with the</p>
+        <p class="property-title" style="margin-right: 3.5in;">original Blissymbols Printer</p>
+    </div>
     <p><br/><br/></p>
     <p class="left">Our replica is an extremely simplified model created based on the only picture we found of the Blissymbols Printer by Rachel Zimmerman. The wooden part was designed in Adobe Illustrator, cut using a laser cutter, and sanded down. A piece of paper
         is put between the two boards and includes the symbols, replicating the look of the original printer.</p>
