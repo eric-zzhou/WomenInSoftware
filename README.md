@@ -1,6 +1,8 @@
 # WomenHistory
 Repository made to host a website for a history project. Topic is Women in Programming.
 
+The folders are just full of images. All the code are in the .html files and should be named after what the page is about. 
+
 Coding resources I looked at:
 
 	https://stackoverflow.com/questions/9128405/image-description
